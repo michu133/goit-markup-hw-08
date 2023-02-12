@@ -1,0 +1,11 @@
+.filters {
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    > .filters__button:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

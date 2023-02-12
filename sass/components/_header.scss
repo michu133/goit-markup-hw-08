@@ -1,0 +1,117 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+
+  &__width {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    margin-right: 345px;
+    position: relative;
+    & > .header__button:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+  &__site {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: #2196f3;
+    }
+    &--current-agency {
+      color: #2196f3;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 53px;
+        left: 0px;
+        top: 45px;
+        background-color: #2196f3;
+        border-radius: 2px;
+      }
+    }
+
+    &--current-portfolio {
+      color: #2196f3;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 58px;
+        left: 97px;
+        top: 45px;
+        background-color: #2196f3;
+        border-radius: 2px;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    width: 321px;
+    box-sizing: border-box;
+    fill: #757575;
+    a {
+      color: #757575;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__mail {
+    display: flex;
+    justify-content: space-between;
+    width: 161px;
+    align-items: center;
+    text-align: center;
+    svg {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover {
+      color: #2196f3;
+      svg {
+        fill: #2196f3;
+      }
+    }
+  }
+  &__tel {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+    text-align: center;
+    svg {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover {
+      color: #2196f3;
+      &svg {
+        fill: #2196f3;
+      }
+    }
+  }
+}
+
+/*.header__nav > .header__button:not(:last-child) {
+  margin-right: 46px;
+}*/

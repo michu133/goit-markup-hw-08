@@ -1,0 +1,130 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__width {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  &__adress {
+    color: #ffffff;
+    background-color: #2f303a;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    margin-top: 20px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+  }
+  &__mail {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: #2196f3;
+    }
+  }
+  &__tel {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: #2196f3;
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  &__text {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+  }
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    margin-left: 77px;
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #fff;
+      line-height: 16.41px;
+      margin-bottom: 11px;
+    }
+    form {
+      justify-content: space-between;
+      display: flex;
+      width: 570px;
+      label {
+        display: none;
+      }
+    }
+    input {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #2f303a;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      color: #fff;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      transition-property: border-color, outline;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus-visible {
+        outline: none;
+        border-color: #2196f3;
+      }
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #fff;
+      line-height: 30px;
+      background-color: #2196f3;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      padding-left: 42px;
+    }
+    svg {
+      margin-left: 24px;
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    position: absolute;
+    width: 448px;
+    height: 23px;
+    text-align: center;
+    left: 40px;
+    top: 40px;
+  }
+  form {
+    max-width: 448px;
+    position: absolute;
+    left: 40px;
+    top: 75px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  [type="submit"] {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    color: white;
+  }
+  &__inputs-group {
+    display: flex;
+    flex-direction: column;
+
+    input + svg {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    label {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      line-height: 14.06px;
+      color: #757575;
+      margin-bottom: 4px;
+    }
+    input {
+      width: 448px;
+      height: 40px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 16px;
+      padding-left: 32px;
+      transition-property: border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus-visible {
+        border-color: #2196f3;
+        outline: none;
+      }
+      &:focus-visible + svg {
+        fill: #2196f3;
+      }
+    }
+    svg {
+      position: absolute;
+    }
+    textarea {
+      width: 448px !important;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 16px;
+      padding-left: 16px;
+      resize: none;
+      height: 120px;
+      transition-property: border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus-visible {
+        border-color: #2196f3;
+        outline: none;
+      }
+    }
+  }
+  &__tel-icon {
+    top: 99.26px;
+    left: 14.27px;
+  }
+  &__email-icon {
+    top: 168px;
+    left: 13.5px;
+  }
+  &__person-icon {
+    top: 32px;
+    left: 15px;
+  }
+  &__privacy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: center;
+    margin-top: 10px;
+    a {
+      color: #2196f3;
+    }
+    input {
+      margin-right: 8px;
+      width: 16px;
+      height: 15px;
+      appearance: none;
+
+      &:checked + label::before {
+        background-color: #2196f3;
+        border-color: #2196f3;
+      }
+      &:checked + svg {
+        visibility: visible;
+      }
+    }
+    label {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        display: block;
+        position: absolute;
+        left: -24px;
+        top: 1px;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid black;
+        border-radius: 2px;
+      }
+    }
+  }
+  &__check-icon {
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+    left: 16px;
+    bottom: 84px;
+    z-index: 1;
+  }
+}
+textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
