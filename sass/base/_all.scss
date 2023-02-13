@@ -10,6 +10,7 @@ body {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 button {
   cursor: pointer;
@@ -47,7 +48,31 @@ button {
   max-width: 1200px;
   text-align: center;
 }
-.container {
+/*.container {
   display: flex;
   flex-direction: column;
+}*/
+
+.container {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

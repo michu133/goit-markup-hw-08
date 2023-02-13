@@ -1,4 +1,4 @@
-.team {
+/*.team {
   display: flex;
   flex-direction: column;
   padding-top: 94px;
@@ -94,6 +94,155 @@
       background-color: #2196f3;
       svg {
         fill: white;
+      }
+    }
+  }
+}*/
+
+.team {
+  margin-top: 0px;
+  background: #f5f4fa;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #f5f4fa;
+  display: flex;
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+  &__title {
+    margin-top: 60px;
+    width: 163px;
+    height: 33px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    white-space: nowrap;
+    margin-bottom: 14px;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  &__card {
+    width: 450px;
+    height: 622px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0;
+  }
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  &__name {
+    font-family: "Roboto";
+    font-style: normal;
+    height: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__role {
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 206px;
+    height: 44px;
+  }
+  &__item {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: #2196f3;
+      svg {
+        fill: #ffffff;
+      }
+    }
+    &:focus {
+      background-color: #2196f3;
+      svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &__icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #afb1b8;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: 354px;
+    height: 536px;
+    img {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    .container {
+      padding-bottom: 94px;
+    }
+    &__list {
+      margin-left: 0;
+    }
+    &__card {
+      width: 270px;
+      height: 428px;
+      img {
+        width: 270px;
+        height: 260px;
       }
     }
   }

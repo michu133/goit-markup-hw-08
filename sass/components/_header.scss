@@ -1,4 +1,4 @@
-.header {
+/*.header {
   height: 80px;
   border-bottom: 1px solid #ececec;
   display: flex;
@@ -111,7 +111,249 @@
     }
   }
 }
+*/
+.header {
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  &__nav {
+    visibility: hidden;
+  }
+  &__contact {
+    visibility: hidden;
+  }
 
-/*.header__nav > .header__button:not(:last-child) {
-  margin-right: 46px;
-}*/
+  .logo__font {
+    margin-left: 15px;
+    .logo__second-part {
+      color: #212121;
+    }
+  }
+}
+.header-menu__hamburger {
+  display: flex;
+  button {
+    padding: 0;
+    margin: 0;
+  }
+  button:hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  button:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.header-menu__hamburger-btn {
+  border: hidden;
+  background-color: #fff;
+  svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  svg:hover {
+    fill: #2196f3;
+  }
+  svg:focus {
+    fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+    .container {
+      justify-content: space-between;
+    }
+    .logo__font {
+      margin-left: 0;
+    }
+
+    &__nav {
+      visibility: visible;
+      width: 282px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      position: relative;
+      padding: 0;
+      list-style-type: none;
+    }
+    &__contact {
+      visibility: visible;
+      display: flex;
+      flex-direction: column;
+    }
+    &__site {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: #212121;
+      text-decoration: none;
+      &--current-agency {
+        color: #2196f3;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 4px;
+          width: 53px;
+          left: 0px;
+          top: 45px;
+          background-color: #2196f3;
+          border-radius: 2px;
+        }
+      }
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      :focus {
+        color: #2196f3;
+      }
+      &--current-portfolio {
+        color: #2196f3;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 4px;
+          width: 58px;
+          left: 113px;
+          top: 45px;
+          background-color: #2196f3;
+          border-radius: 2px;
+        }
+      }
+    }
+    &__mail {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #757575;
+      margin-bottom: 10px;
+      svg {
+        fill: #757575;
+        margin-right: 8px;
+      }
+    }
+    &__tel {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      color: #757575;
+      svg {
+        fill: #757575;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .header__site--current-agency {
+    color: #2196f3;
+  }
+
+  .header-menu__hamburger {
+    visibility: hidden;
+    display: none;
+  }
+
+  .header .logo__font {
+    margin-left: 0;
+  }
+  .header__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__site--current-agency {
+    color: #2196f3;
+  }
+  .header__site--current-agency::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 53px;
+    left: 0px;
+    top: 45px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
+  .header-menu__hamburger {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+
+    .logo {
+      margin-right: 93px;
+    }
+    .container {
+      justify-content: space-between;
+    }
+    &__contact {
+      flex-direction: row;
+    }
+    &__nav {
+      margin-right: 350px;
+    }
+    &__mail {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      margin-right: 30px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        color: #2196f3;
+      }
+      &:hover svg {
+        fill: #2196f3;
+      }
+    }
+    &__tel {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        color: #2196f3;
+      }
+      &:hover svg {
+        fill: #2196f3;
+      }
+    }
+    &__mail svg,
+    &__tel svg {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

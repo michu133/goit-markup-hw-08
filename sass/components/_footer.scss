@@ -1,4 +1,4 @@
-.footer {
+/*.footer {
   display: flex;
   flex-direction: column;
   background-color: #2f303a;
@@ -125,6 +125,218 @@
     }
     svg {
       margin-left: 24px;
+    }
+  }
+}*/
+
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  &__width {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__adress {
+    width: 251px;
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  &__mail {
+    width: 232px;
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  &__tel {
+    width: 232px;
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  &__socials {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .team__socials .team__item {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+  &__text {
+    width: 146px;
+    height: 16px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    h3 {
+      width: 207px;
+      height: 16px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        color: #fff;
+        width: 450px;
+        height: 50px;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 16px;
+        margin-top: 20px;
+        background-color: #2f303a;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+      }
+      button {
+        background: #2196f3;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+        border-radius: 4px;
+        border: #2f303a;
+        color: #fff;
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        outline: none;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        svg {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    margin-left: 144px;
+  }
+  .footer__tablet {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    .container {
+      width: auto;
+    }
+    &__width {
+      flex-direction: row;
+      width: 1170px;
+      align-items: center;
+    }
+
+    &__newsletter {
+      margin-left: 78px;
+      align-items: flex-start;
+      h3 {
+        text-align: left;
+      }
+      form {
+        flex-direction: row;
+        button {
+          margin-left: 12px;
+        }
+      }
+      input {
+        width: 358px;
+      }
+    }
+    &__contact {
+      align-items: normal;
+    }
+    .logo__font {
+      text-align: left;
+    }
+    &__adress {
+      text-align: left;
+    }
+    &__mail {
+      text-align: left;
+    }
+    &__tel {
+      text-align: left;
+    }
+
+    &__socials {
+      margin-left: 70px;
+    }
+    &__adress {
+      width: 246px;
     }
   }
 }
