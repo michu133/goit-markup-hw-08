@@ -116,15 +116,23 @@
   height: 60px;
   border-bottom: 1px solid #ececec;
   display: flex;
+  &__width {
+    display: flex;
+    margin: 0 auto;
+    min-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__nav {
-    visibility: hidden;
+    display: none;
   }
   &__contact {
-    visibility: hidden;
+    display: none;
   }
 
   .logo__font {
-    margin-left: 15px;
     .logo__second-part {
       color: #212121;
     }
@@ -175,7 +183,6 @@
     }
 
     &__nav {
-      visibility: visible;
       width: 282px;
       display: flex;
       justify-content: space-between;
@@ -307,6 +314,11 @@
     }
     .container {
       justify-content: space-between;
+    }
+    &__width {
+      display: flex;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     &__contact {
       flex-direction: row;
